@@ -9,6 +9,4 @@ install:
   - docker build -t $TRAVIS_BUILD_NUMBER $TRAVIS_BUILD_DIR/
 
 script:
-  - docker run -d -p 8069:8069 --name openssl-exec-$TRAVIS_BUILD_NUMBER -t $TRAVIS_BUILD_NUMBER
-  - sleep 10
-  - curl --fail http://localhost:8080/
+  - docker run -t $TRAVIS_BUILD_NUMBER openssl version
