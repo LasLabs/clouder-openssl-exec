@@ -40,6 +40,7 @@ Known Issues / Roadmap
 ======================
 
 * Add a test for `parse_cfssl`
+* Use a tag of the python container & re-enable DL3007
 
 Bug Tracker
 ===========
